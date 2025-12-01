@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport "content= "width=device-width,inital-scale=1.0">
+        <title>
+         Huella | Registro
+        </title>
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">    
+       <link rel="stylesheet" href="estilos.css">
+       <!-- Iconos (remixicon o fontawesome) -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+       </head>
+  
+  
+    <body>
+      <style>
+        body{
+          background-color: #1e4b26;
+          background-image: url("imagenes/fondo_registro.png");
+          background-size: 40%;
+          background-repeat: no-repeat;
+          height: 100vh;    
+        }
+      </style>
+
+   <link rel="stylesheet" href="estilos.css">
+     
+
+     <!-- Navbar principal -->
+     <header class="navbar">
+     <div class="logo">
+        <a href="iniciar_sesion.html" class="imagen-link">
+      <img src="imagenes/logo.png" alt="Logo Huella"></a>
+     </div>
+     <nav class="nav-links">
+      
+     </nav>
+    
+     </header>
+
+  <div class="contenedor_registro">
+  <h1 class="titulo">Gracias por</h1>
+  <h1 class="titulo">registrate en </h1>
+  <h1 class="titulo">Huella.</h1>
+  </div>
+
+  <div class="contenedor_formulario">
+ <form action="registrar_cliente.php" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre" required><br>
+  <input type="text" name="telefono" placeholder="Teléfono"><br>
+  <input type="text" name="direccion" placeholder="Dirección"><br>
+  <input type="email" name="correo" placeholder="Correo" required><br>
+  <input type="password" name="contrasena" placeholder="Contraseña" required><br>
+  <button type="submit" class="btn">Registrarme</button>
+ </form>
+</div>
+
+    </body>
+
+

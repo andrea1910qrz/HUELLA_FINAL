@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<HTML Lang = "es">
+    <head>
+        <Meta charset = "UTF-8">
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+           <Meta name = "Viewport" Content = "Width = devicewidth, initial-scale = 1.0"> 
+           <title> Sobre nosotros </title>
+        
+        <style>
+            body {
+            background-color: #f7f3da; 
+            font-family: 'Inter', sans-serif;
+            margin: 0; /* quita el espacio blanco del borde */
+            position: relative; /* necesario para que "absolute" funcione dentro del body */
+            } 
+
+             .historia {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            Color:rgb(77, 52, 24);
+            position: absolute;
+            top: 470px;
+            left: 70px;
+            width: 350px;
+            text-align: justify;
+            
+            }
+
+            .contacto{
+            font-family:'Inter', sans-serif; 
+            font-size:15px; 
+            Color:rgb(77, 52, 24);  
+            position: absolute;
+            top: 150px;
+            left:420px;
+            text-align: justify;
+            }
+          
+        </style>
+
+    </head>
+
+    <body>  
+        <link rel="stylesheet" href="estilos.css">
+     
+    
+
+    <img src="Imagenes/contacto.jpg"  alt="foto de contacto, persona con un telefono"
+       style="width: 350px; top: 130px; left: 50px; position: absolute;">
+
+    <!-- contacto -->
+
+    <div class="contacto">
+        <p>Contacto</p>
+        <p> ✉ Correo electronico: Huella@gmail.com</p>
+        <p> 📞 Whatsapp: 8125934864</p>
+       <p> 📍 Dirección física: Nuevo León, Apodaca Centro #234</p>
+       <p> ⏰ Horarios de atención: </p>
+       <p>Lunes a Viernes de 8:00 a.m-10:00 p.m</p>
+       <p>Sábados y Domingos de 10:00 a.m-7:00 p.m</p>
+    </div> 
+
+    
+
+    <img src="Imagenes\Historia.jpg"  alt="foto de historia"
+       style="width: 380px; top: 490px; left: 440px; position: absolute;">
+       <div class="historia">
+        <p> Historia </p>
+        <p>Nosotras somos Huella, una marca de calzado nacida del sueño compartido de dos amigas que encontraron en su pasión por los zapatos una forma de crear algo significativo. Desde el inicio, comprendimos que un par de zapatos no es solo un accesorio: es una pieza esencial que influye en cómo te sientes, en cómo caminas y en la seguridad con la que afrontas cada día.
+
+Creemos firmemente que unos zapatos cómodos, estilizados y de calidad pueden transformar tu estado de ánimo y acompañarte en todos los momentos importantes de tu vida. Bajo esa convicción nació Huella: un proyecto creado para ofrecer diseños que no solo luzcan hermosos, sino que también te envuelvan en confort, te hagan sentir auténtica y reflejen tu personalidad en cada paso.
+
+Cada par es elaborado con dedicación, cuidado y el cariño que dio origen a esta amistad y a este sueño. En Huella, buscamos que cada diseño deje una marca especial en tu vida, la misma que nos inspiró a convertir una ilusión en una marca que camina contigo.
+</p>
+       </div>
+
+    <video src="Imagenes\video_sobrenosotros.mp4" autoplay muted loop width="600"
+    style="position: absolute; top: 0px; left: 900px;"> </video>
+
+   
+
+
+    <link rel="stylesheet" href="estilos.css">
+   
+<!-- Navbar principal -->
+      <header class="navbar">
+     <div class="logo">
+        <a href="index.html" class="imagen-link">
+        <img src="imagenes/logo.png" alt="Logo Huella"></a>
+     </div>
+     <nav class="nav-links">
+      <a href="catalogo.php">Catalogo</a>
+      <a href="Nosotros.html">Sobre Nosotros</a>
+     </nav>
+     
+     <div class="icons">
+
+    <div class="usuario-container">
+        <i class="ri-user-line" id="userIcon"></i>
+
+        <div class="menu-usuario" id="menuUsuario">
+            <a href="iniciar_sesion.html">Cerrar sesión</a>
+        </div>
+    </div>
+    <a href="carrito.php">
+    <i class="ri-shopping-bag-line"></i> </a>
+    </div>
+   
+
+    <script>
+    document.getElementById("userIcon").addEventListener("click", function(){
+    let menu = document.getElementById("menuUsuario");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    });
+
+    // Cierra el menú si haces clic fuera de él
+    document.addEventListener("click", function(e){
+    let menu = document.getElementById("menuUsuario");
+    let icon = document.getElementById("userIcon");
+
+    if(!icon.contains(e.target) && !menu.contains(e.target)){
+        menu.style.display = "none";
+    }
+    });
+    </script>
+      </header>
+
+</HTML>

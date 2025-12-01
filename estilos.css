@@ -1,0 +1,240 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor_index {
+  position: absolute;
+  top: 905%;
+  left: 40%;
+  transform: translate(-20%, -40%);
+}
+
+.contenedor_registro {
+  position: absolute;
+  font-size: 30px;
+  top: 30%;
+  left: 55%;
+  transform: translate(-20%, -40%);
+}
+
+.contenedor_formulario {
+  position: absolute;
+  font-size: 40px;
+  top: 70%;
+  left: 900px;
+  transform: translate(-20%, -40%);
+}
+
+.titulo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 90px;
+  line-height: 0.9; /* ajusta el espacio entre líneas */
+  margin: 0;
+}
+
+.btn {
+  background-color: #ea6230;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+/* Efecto al pasar el mouse */
+.btn:hover {
+   background-color: #e0a96b;
+    transform: scale(1.05); /* crece un poco */
+   box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+}
+
+.uno {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+/*BARRA NAVEGADORA*/
+.top-bar {
+  background-color: #b05216;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #e88d66af, #f2b37cb9);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 55px;
+}
+
+/* Enlaces */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #eee9e9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+   margin: 0 12px;
+  letter-spacing: 0.5px;
+
+}
+
+.nav-links a:hover {
+  color: #e65411; /* tono rosado elegante */
+  transform: scale(1.5); /* crece un poco */
+   box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+}
+
+/* Íconos */
+.icons i {
+  font-size: 22px;
+  color: #ededed;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #e65411;
+  transform: scale(1.9); /* crece un poco */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+}
+
+/* Sección de bienvenida */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: url('fondo.jpg') no-repeat center/cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 600;
+  backdrop-filter: brightness(0.8);
+}
+
+/*catalogo*/
+
+.imagen-link:hover {
+ transform: scale(1.05); /* agranda un poco */
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* sombra */
+ }
+
+ .contenedor-productos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.producto {
+    width: 280px;
+    text-align: center;
+    position: relative;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.precios {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stock {
+    font-size: 14px;
+    color: gray;
+}
+
+.btn_coleccion {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f28b66;
+    cursor: pointer;
+    color: white;
+}
+
+/* CERRAR SESION */
+.usuario-container {
+            position: relative;
+            display: inline-block;
+            }
+
+            /* Menú que aparece al hacer clic */
+            .menu-usuario {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background: #ffffff;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            padding: 8px 0;
+            min-width: 120px;
+            text-align: left;
+            z-index: 999;
+            }
+
+            /* Estilo del link dentro del menú */
+            .menu-usuario a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-family:'Inter', sans-serif;
+            color: #333;
+            transition: .2s;
+            }
+
+            .menu-usuario a:hover {
+            background-color: #e65411;
+            color: white;
+            }
+
+
+
+ 
+             

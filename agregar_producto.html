@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport "content= "width=device-width,inital-scale=1.0">
+        <title>
+         Huella | Registro
+        </title>
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">    
+       <link rel="stylesheet" href="estilos.css">
+       <!-- Iconos (remixicon o fontawesome) -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+       </head>
+  
+  
+    <body>
+      <style>
+        body{
+          background-color: #c49e78;
+          background-image: url("imagenes/agregar_prod.jpg");
+          background-size: 40%;
+          background-repeat: no-repeat;
+          height: 100vh;    
+        }
+        .btn_agregar{
+         position: absolute
+        top: 80px;
+        left: 50px;
+        background-color: #ea6230;
+         color: white;
+         border: none;
+        padding: 12px 32px;
+         border-radius: 30px;
+         font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+         }
+     /* Efecto al pasar el mouse */
+         .btn_agregar:hover {
+         background-color: #e0a96b;
+         transform: scale(1.05); /* crece un poco */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+            }
+        
+      </style>
+
+   
+     
+<link rel="stylesheet" href="estilos.css">
+   
+<!-- Navbar principal -->
+      <header class="navbar">
+     <div class="logo">
+        <a href="index_admin.html" class="imagen-link">
+        <img src="imagenes/logo.png" alt="Logo Huella"></a>
+     </div>
+     <nav class="nav-links">
+      <a href="catalogo_admin.php">Catalogo</a>
+      <a href="Nosotros_admin.html">Sobre Nosotros</a>
+      <a href="registro_admin.html">Registrar Admin</a>
+     </nav>
+     <div class="icons">
+
+    <div class="usuario-container">
+        <i class="ri-user-line" id="userIcon"></i>
+
+        <div class="menu-usuario" id="menuUsuario">
+            <a href="iniciar_sesion.html">Cerrar sesión</a>
+        </div>
+    </div>
+   
+
+    <script>
+    document.getElementById("userIcon").addEventListener("click", function(){
+    let menu = document.getElementById("menuUsuario");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    });
+
+    // Cierra el menú si haces clic fuera de él
+    document.addEventListener("click", function(e){
+    let menu = document.getElementById("menuUsuario");
+    let icon = document.getElementById("userIcon");
+
+    if(!icon.contains(e.target) && !menu.contains(e.target)){
+        menu.style.display = "none";
+    }
+    });
+    </script>
+      </header>
+
+
+  <div class="contenedor_registro">
+  <h1 class="titulo"> Registra un</h1>
+  <h1 class="titulo"> Nuevo </h1>
+  <h1 class="titulo">Producto.</h1>
+  </div>
+
+  <div class="contenedor_formulario">
+ <form action="agregar_producto_admin.php" method="POST">
+  <input type="text" name="nombre" placeholder="nombre"><br>
+  <input type="text" name="descripcion" placeholder="descripcion"><br>
+  <input type="number" name="precio" placeholder="precio" required><br>
+  <input type="number" name="stock" placeholder="stock" required><br>
+  <input type="text" name="imagen" placeholder="imagen" required><br>
+  <button class="btn_agregar"
+   type="submit">Registrar Producto</button>
+ </form>
+</div>
+
+    </body>
+</html>
+

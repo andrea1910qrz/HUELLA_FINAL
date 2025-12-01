@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport "content= "width=device-width,inital-scale=1.0">
+        <title>
+            Huella | Inicio
+        </title>
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="estilos.css">
+         <!-- Iconos (remixicon o fontawesome) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+
+<body>
+   <style>
+    body {
+      /* Ruta de tu imagen */
+      background-image: url('imagenes/fondo_index.png');
+      /* Ajustes importantes */
+      background-size: cover;         /* La imagen cubre toda la pantalla */
+      background-repeat: no-repeat;   /* No se repite */
+      background-position: center;    /* Centrada */
+      margin: 0;                      /* Quita márgenes */
+      height: 100vh;                  /* Altura total del viewport */
+      font-family: 'Inter', sans-serif;
+      color: white;                   /* Texto visible sobre la imagen */
+    }
+  </style>
+
+   <link rel="stylesheet" href="estilos.css">
+   
+<!-- Navbar principal -->
+      <header class="navbar">
+     <div class="logo">
+        <a href="Index.html" class="imagen-link">
+        <img src="imagenes/logo.png" alt="Logo Huella"></a>
+     </div>
+     <nav class="nav-links">
+      <a href="catalogo.php">Catalogo</a>
+      <a href="Nosotros.html">Sobre Nosotros</a>
+     </nav>
+     <div class="icons">
+
+    <div class="usuario-container">
+        <i class="ri-user-line" id="userIcon"></i>
+
+        <div class="menu-usuario" id="menuUsuario">
+            <a href="iniciar_sesion.html">Cerrar sesión</a>
+        </div>
+    </div>
+    <a href="carrito.php">
+    <i class="ri-shopping-bag-line"></i> </a>
+    </div>
+
+    <script>
+    document.getElementById("userIcon").addEventListener("click", function(){
+    let menu = document.getElementById("menuUsuario");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    });
+
+    // Cierra el menú si haces clic fuera de él
+    document.addEventListener("click", function(e){
+    let menu = document.getElementById("menuUsuario");
+    let icon = document.getElementById("userIcon");
+
+    if(!icon.contains(e.target) && !menu.contains(e.target)){
+        menu.style.display = "none";
+    }
+    });
+    </script>
+      </header>
+
+  <div class="contenedor_index">
+  <h1 class="titulo">Descubre nuestra</h1>
+  <h1 class="titulo">nueva colección</h1>
+  <h1 class="titulo">limitada.</h1>
+  <h3 style="color: aliceblue;
+  font-family: 'Inter', sans-serif;">
+  DISPONIBLE AHORA</h3>
+  <i style="color: aliceblue;
+  position: absolute;
+  top: 86%;
+  left: 45%;"
+  >Huella. "Tacones resistentes para mujeres fuertes"
+  </i>
+</div>
+<a href="catalogo.php">
+<button  class="btn uno">Ver colección</button>
+</a>
+</body>
+</html>
+
+
